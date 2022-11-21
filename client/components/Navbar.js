@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -48,15 +48,15 @@ function Navbar() {
             REPHMEDIA
           </Typography>
           {/* The box below is only visible on mobile, handled through display: { xs: "flex", md: "none" } (on xs screens display flex, from medium screens display none)*/}
-          <Box
+          {/* <Box
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "none" },
               alignItems: "center",
               justifyContent: "space-between",
             }}
-          >
-            <Box sx={{ width: "48px" }}></Box>
+          > */}
+          {/* <Box sx={{ width: "48px" }}></Box>
             <Typography
               variant="h5"
               noWrap
@@ -74,9 +74,9 @@ function Navbar() {
               }}
             >
               REPHMEDIA
-            </Typography>
+            </Typography> */}
 
-            <IconButton
+          {/* <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -110,7 +110,7 @@ function Navbar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
           <Box
             sx={{
               flexGrow: 1,
